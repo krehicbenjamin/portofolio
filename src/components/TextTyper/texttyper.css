@@ -1,0 +1,69 @@
+.writer-container{
+    margin-top: 50%;
+    margin-bottom: 70%;
+}
+
+.typer{
+    margin-top: 500;
+    position: relative;
+    width: max-content;
+}
+.typer::after,
+.typer::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.typer::before{
+    background-color: black;
+    animation: writer 7s steps(27) 1s forwards;
+}
+.typer::after{
+    width: 0.125em;
+    background: white;
+    animation: writer 7s steps(27) 1s forwards, blink 700ms steps(27) infinite;
+}
+
+.subtitle{
+    color: gainsboro;
+    font-size: 2rem;
+    font-weight: 400;
+    opacity: 0;
+    transform: translateY(5rem);
+    animation: slide-up 1s ease 8s forwards;
+}
+
+.fa-angle-double-down{
+    font-size: 4rem;
+    opacity: 0;
+    transform: translateY(5rem);
+    animation: slide-up-arrows 1s ease 9s forwards, blink 1s infinite ;
+}
+
+@keyframes writer {
+    to{
+        left: 100%;
+    }
+}
+@keyframes blink {
+    to{
+        background: transparent;
+    }
+}
+@keyframes slide-up {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes slide-up-arrows {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
