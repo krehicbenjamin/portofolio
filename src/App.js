@@ -1,6 +1,8 @@
 import TextTyper from './components/TextTyper/TextTyper';
 import Intro from './components/Introduction/Intro';
 import Project from './components/Project/Project';
+import Skills from './components/Skills/Skills';
+
 import WorldVision from './Images/WorldVision.png';
 import SEProject from './Images/SE_project.png';
 import HCI from './Images/HCI_Project.png';
@@ -44,6 +46,11 @@ function App() {
       <Project 
       
       />
+
+      <h1>
+        Skills
+      </h1>
+      <Skills />
 
     </div>
   );
