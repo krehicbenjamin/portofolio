@@ -5,9 +5,9 @@ class Intro extends Component {
     render() { 
         return ( 
             <div className="intro-container">
-                <h1>intro</h1>
-                <img src="https://picsum.photos/200/300" alt="" />
-                <p>ABAEHNGNEAKJNGEAKJNGKJNAEKGNEKJANGJKANEJKGAKJNNGNEAKJNGEAKJNGKJNAEKGNEKJANGJKANEJKGAKJNNGNEAKJNGEAKJNGKJNAEKGNEKJANGJKANEJKGAKJNNGNEAKJNGEAKJNGKJNAEKGNEKJANGJKANEJKGAKJNNGNEAKJNGEAKJNGKJNAEKGNEKJANGJKANEJKGAKJNNGNEAKJNGEAKJNGKJNAEKGNEKJANGJKANEJKGAKJNNGNEAKJNGEAKJNGKJNAEKGNEKJANGJKANEJKGAKJNGEAKJNGKJNAEKGNEKJANGJKANEJKGAKJNGEAKJNGKJNAEKGNEKJANGJKANEJKGAKJNGEAKJNGKJNAEKGNEKJANGJKANEJKGN</p>
+                <h1>Intro</h1>
+                <img className="intro-image" src={this.props.image} alt="" />
+                <p>{this.props.intro}</p>
             </div>
          );
     }

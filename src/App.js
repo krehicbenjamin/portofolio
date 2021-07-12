@@ -4,6 +4,7 @@ import Project from './components/Project/Project';
 import WorldVision from './Images/WorldVision.png';
 import SEProject from './Images/SE_project.png';
 import HCI from './Images/HCI_Project.png';
+import profile from './Images/profile.png';
 import './App.css';
 
 
@@ -14,7 +15,10 @@ function App() {
         text = "Hello, my name is Benjamin!"
         subtitle = "Welcome :)"
       />
-      <Intro />
+      <Intro 
+        image = {profile}
+        intro = "Hello! I am Benjamin Krehic, a third year student at International Burch University. I am very passionate about programming and improving my skills to become the best at what I do! My current goals include becoming a frontend developer and then branching out to be a fullstack web developer. Along with that I want to learn swift to make IOS applications."
+      />
       <h1>
         Project Showcase
       </h1>
